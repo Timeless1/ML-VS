@@ -1,0 +1,22 @@
+RBT_PARAMETER_FILE_V1.00            
+TIRLE drd3_3pbl           
+RECEPTOR_FILE   ../inputfile/protein.mol2            
+RECEPTOR_FLEX 3.0            
+RECEPTOR_DIHEDRAL_STEP 10.0            
+            
+SECTION MAPPER            
+        SITE_MAPPER RbtLigandSiteMapper            
+        VOL_INCR 0.0            
+        GRIDSTEP 0.5            
+        RADIUS 6.0            
+        REF_MOL  ../outputfile/ligand.sd            
+        SMALL_SPHERE 1.0            
+        TRACE 1            
+        MIN_VOLUME 100            
+        MAX_CAVITIES 1            
+END_SECTION            
+
+SECTION CAVITY            
+        SCORING_FUNCTION        RbtCavityGridSF            
+        WEIGHT                  1.0            
+END_SECTION
